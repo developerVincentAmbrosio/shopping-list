@@ -9,7 +9,7 @@ $(function() {
 
   // check button 
   $(".shopping-item-toggle").click(function(event) {
-    $(this).closest(".shopping-item").toggleClass("shopping-item__checked");
+    $(this).parent().prev().toggleClass("shopping-item__checked");
   //  console.log($(this).closest(".shopping-item"));
   });
   
